@@ -1,0 +1,100 @@
+:root {
+    --cor-primaria: white;
+    --cor-secundaria: black;
+    --cor-terceira: #032FF5;
+    --cor-degrade1: #6e9fe9;
+    --cor-degrade2: #3bc5cd;
+    --fonte-padao:  'Arial', sans-serif;
+    --tamanho-fonte-titulo: 20px;   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+@media (max-width: 768px) {  
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--cor-secundaria);    
+}
+
+.contact h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--cor-primaria);
+}
+
+.contact form {
+    width: 300px;
+    text-align: center;
+}
+
+.input-box .input-field {
+    width: 48,5%;
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 3px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: azure;
+    margin: 12px 0;
+}
+
+.field.error .item {
+    border-color: #f68268;
+}
+
+.field .item::placeholder {
+    color: rgba(255, 255, 255, .5);
+}
+
+.field .error-txt {
+    font-size: 14.5px;
+    color: #f68268;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none; 
+}
+
+.field.error .error-txt {
+    display:block;
+} 
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form .textarea-field .error-txt {
+    margin-top: -10px;
+}  
+
+form button {
+    padding: 12px 32px;
+    background: #0ef;
+    border: none;
+    outline: none;  
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1.5px; 
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+
+form button:hover {
+    box-shadow: none;
+}

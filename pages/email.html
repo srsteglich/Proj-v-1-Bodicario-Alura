@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estiloEmail.css">
+    <title>E-mail</title>
+</head>
+<body> 
+    <main>
+      <section class="contact">
+        <h2>Contato!</h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Nome Completo" id="name" class="item" autocomplete="off">
+                    <div class="error-txt">O nome não pode ficar em branco </div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="E-mail" id="email" class="item" autocomplete="off">
+                    <div class="error-txt">O e-mail não pode ficar em branco </div>                    
+                </div>
+            </div>
+       
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Assunto" id="subject" class="item" autocomplete="off">
+                    <div class="error-txt">O assunto não pode ficar em branco </div> 
+                </div>
+            </div>
+
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Mensagem" class="item" autocomplete="off"></textarea>
+                <div class="error-txt">A mensagem não pode ficar em branco </div>
+            </div>
+
+            <button type="submit">Enviar</button>
+            <button class="button" onclick="history.back()">Voltar</button>
+        </form>
+      </section>
+    </main> 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/email.js"></script>
+</body>
+</html>

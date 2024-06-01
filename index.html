@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Boticário</title>
+</head>
+<body>
+    <header>     
+            <img src="./img/BoticarioPreto.png"></img>        
+    </header>
+
+    <main>
+        <div class="menu">
+            <div class="toggle"> <ion-icon name="menu"></ion-icon> </div>           
+            <li style="--i:0;--clr:#387ADF;">
+                <a href="./pages/construcao.html" class="tooltip" data-tooltip="Minha Página"><ion-icon name="home"></ion-icon></a>
+            </li>            
+            <li style="--i:1;--clr:#E8751A;">               
+                <a href="https://srsteglich.github.io/Curriculo-Digital/#" class="tooltip" data-tooltip="Meu Curriculo Digital" target="_blank"><ion-icon name="document-text"></ion-icon></a>
+            </li>
+            <li style="--i:2;--clr:#ff0000;">
+                <a href="./pages/youtube.html" class="tooltip" data-tooltip="Meu YouTube"><ion-icon name="logo-youtube"></ion-icon></a>
+            </li>
+            <li style="--i:3;--clr:#25d366;">
+                <a href="https://api.whatsapp.com/send/?phone=5548988081082&text=Ol%C3%A1%2C+pode+me+informar+pelo+WhatsApp%21&type=phone_number&app_absent=0" class="tooltip" data-tooltip="Meu Whatsapp" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            </li>
+            <li style="--i:4;--clr:black;">
+             <!--   <a href="https://srsteglich.github.io/Curriculo-Digital/#eusou" class="tooltip" data-tooltip="Meu E-mail" target="_blank"><ion-icon name="mail"></ion-icon></a>  -->
+             <a href="./pages/email.html" class="tooltip" data-tooltip="Meu E-mail"><ion-icon name="mail"></ion-icon></a>              
+            </li>
+            <li style="--i:5;--clr:#0a66c2;">
+                <a href="https://www.linkedin.com/in/sergio-r-steglich/" class="tooltip" data-tooltip="Meu Linkedin" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </li>
+            <li style="--i:6;--clr:black;">
+                <a href="https://github.com/srsteglich" class="tooltip" data-tooltip="Meu GitHub" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            </li>
+        </div>
+    </main>
+
+    <footer>
+        Desenvolvido pelo &copy;SRSistemas - 2024.
+    </footer>
+    
+    <script src="./js/index.js" defer></script>  
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+ <!--   <script>
+        let toggle = document.querySelector('.toggle');
+
+        // Adicionando evento mouseover
+        toggle.addEventListener('mouseover', function() {
+            toggle.classList.add('toggle-ampliado'); // Adiciona a classe para ampliar
+        });
+
+        // Adicionando evento mouseout
+        toggle.addEventListener('mouseout', function() {
+            toggle.classList.remove('toggle-ampliado'); // Remove a classe para voltar ao tamanho original
+        });
+
+        toggle.onclick = function() {
+            let menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        };
+    </script>    -->
+
+</body>
+</html>
